@@ -23,6 +23,32 @@ public class Recursividad {
             System.out.print(x + "  ");  //mostrar por pantalla y concatena espacio
             Imprimir(x + 1); //Llama nuevamente Metodo Recursivo* (Accion Recursiva)
         }
-    } //OUT> 0  1  2  3  4  5  
+    } //OUT> 0  1  2  3  4  5
     
-}//>>>TECLADO>  0
+
+
+
+///Realice Un metodo que SUME recursivamente un mismo numero, 
+//un numero determinado de veces.
+    public static int SumaRecursiva(int x, int itera){
+        int rest=0;
+        
+        for(int i=0; i<itera; i++){
+            rest=x+SumaRecursiva(x,itera-1);
+            System.out.println(x + ",  ");
+        }
+        return rest;
+    }
+
+// Realice un algoritmo que guarde una serie numeros en un arreglo de
+//  10POS y le solicite al usuario si desea mostrar el arreglo
+// o si desea eliminar el arreglo
+// Utilizando Recursividad
+
+    
+// >> Ingrese el numero que desea almacenar en la posicion 1:
+// >> Ingrese el numero que desea almacenar en la posicion 2:
+// >> ..... hasta la posicion 10
+    
+// >> Presione 1 para mostrar el arreglo y presione 2 para eliminarlo.
+}
